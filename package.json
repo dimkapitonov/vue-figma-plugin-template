@@ -12,15 +12,16 @@
     "vue": "^3.4.29"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.1",
-    "vue-tsc": "^2.0.21",
     "@figma/eslint-plugin-figma-plugins": "*",
     "@figma/plugin-typings": "*",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
-    "eslint": "^8.54.0"
+    "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^8.54.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-singlefile": "^2.0.2",
+    "vue-tsc": "^2.0.21"
   },
   "eslintConfig": {
     "extends": [
