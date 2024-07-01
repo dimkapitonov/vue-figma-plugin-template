@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import RectangleCreator from './components/RectangleCreator.vue'
+  useToggle(useDark())
 </script>
 
 <template>
