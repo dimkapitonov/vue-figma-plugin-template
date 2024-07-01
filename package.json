@@ -16,7 +16,6 @@
     "@figma/eslint-plugin-figma-plugins": "*",
     "@figma/plugin-typings": "*",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.54.0",
     "typescript": "^5.2.2",
@@ -31,16 +30,6 @@
       "plugin:@typescript-eslint/recommended",
       "plugin:@figma/figma-plugins/recommended"
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": [
-        "./tsconfig.json",
-        "./tsconfig.app.json",
-        "./tsconfig.node.json",
-        "./vite.config.code.ts",
-        "./vite.config.ui.ts"
-      ]
-    },
     "root": true,
     "rules": {
       "@typescript-eslint/no-unused-vars": [
