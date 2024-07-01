@@ -1,6 +1,6 @@
 # Vue Figma Plugin Template
 
-This template should help get you started developing Figma plugin with Vue and TypeScript in Vite. 
+This template should help get you started developing Figma plugin with Vue and TypeScript in Vite.
 
 Plugin will open a window to prompt the user to enter a number, and it will then create that many rectangles on the screen.
 
@@ -18,10 +18,10 @@ You can start developing your Figma plugin by following these steps:
    ```bash
    pnpm run watch
    ```
-4. Connect your plugin in Figma with `manifest.json` in `dist` folder.
-5. Test the plugin that is running in `--watch` mode.
-5. Build the plugin when development is complete.
+5. Connect your plugin in Figma with `manifest.json` in `dist` folder.
+6. Test the plugin that is running in `--watch` mode.
+7. Build the plugin when development is complete.
    ```bash
    pnpm run build
    ```
-6. The final files can be found in the `dist` folder.
+8. The final files can be found in the `dist` folder.

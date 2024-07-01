@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  useToggle(useDark())
+useToggle(useDark())
 </script>
 
 <template>

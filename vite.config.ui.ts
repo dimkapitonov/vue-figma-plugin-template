@@ -1,4 +1,4 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
 import vue from '@vitejs/plugin-vue'
@@ -16,20 +16,20 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        '@vueuse/core'
+        '@vueuse/core',
       ],
-      dts: 'src/auto-imports.d.ts'
+      dts: 'src/auto-imports.d.ts',
     }),
     Components({
-      dts: 'src/components.d.ts'
-    })
+      dts: 'src/components.d.ts',
+    }),
   ],
   build: {
     emptyOutDir: false,
     rollupOptions: {
       input: {
-        ui: resolve(__dirname, '/index.html')
-      }
-    }
-  }
+        ui: resolve(__dirname, '/index.html'),
+      },
+    },
+  },
 })

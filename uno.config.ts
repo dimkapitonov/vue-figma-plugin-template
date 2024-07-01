@@ -6,12 +6,12 @@ import {
   presetUno,
   presetWebFonts,
   transformerDirectives,
-  transformerVariantGroup
+  transformerVariantGroup,
 } from 'unocss'
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-2 py-1 rounded-2 bg-gray-200 hover:bg-gray-300']
+    ['btn', 'px-2 py-1 rounded-2 bg-gray-200 hover:bg-gray-300'],
   ],
   presets: [
     presetUno(),
@@ -20,7 +20,7 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: 'Inter'
+        sans: 'Inter',
       },
     }),
   ],

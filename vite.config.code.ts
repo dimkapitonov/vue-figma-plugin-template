@@ -1,18 +1,17 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   build: {
     emptyOutDir: false,
     rollupOptions: {
       input: {
-        code: resolve(__dirname, '/src/figma.ts')
+        code: resolve(__dirname, '/src/figma.ts'),
       },
       output: {
         dir: 'dist',
-        entryFileNames: '[name].js'
-      }
-    }
-  }
+        entryFileNames: '[name].js',
+      },
+    },
+  },
 })
