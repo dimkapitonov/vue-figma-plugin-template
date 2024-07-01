@@ -6,6 +6,6 @@
 
 tasks:
   - init: pnpm install
-    command: pnpm run build
+    command: pnpm run dev
 
 
