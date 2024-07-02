@@ -10,9 +10,10 @@ import {
 } from 'unocss'
 
 export default defineConfig({
-  shortcuts: [
-    ['btn', 'px-2 py-1 rounded-2 bg-gray-200 hover:bg-gray-300'],
-  ],
+  shortcuts: {
+    btn: 'px-2 py-2 rounded-2 bg-blue-500 text-white hover:underline disabled:cursor-not-allowed disabled:hover:no-underline disabled:opacity-50',
+    input: 'px-2 py-2 rounded-2 text-center bg-transparent border-1 border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 focus:border-gray-300 outline-none dark:focus:border-gray-500',
+  },
   presets: [
     presetUno(),
     presetAttributify(),
@@ -21,6 +22,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: 'Inter',
+        mono: 'JetBrains Mono',
       },
     }),
   ],

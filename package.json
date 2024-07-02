@@ -8,7 +8,7 @@
     "lint:fix": "eslint . --fix",
     "dev": "vite -c vite.config.ui.ts",
     "build": "vue-tsc -b && vite build -c vite.config.code.ts && vite build -c vite.config.ui.ts",
-    "watch": "vue-tsc -b && vite build -c vite.config.code.ts -w & vite build -c vite.config.ui.ts -w"
+    "build:watch": "vue-tsc -b && vite build -c vite.config.code.ts -w & vite build -c vite.config.ui.ts -w"
   },
   "dependencies": {
     "@types/node": "^20.14.8",
