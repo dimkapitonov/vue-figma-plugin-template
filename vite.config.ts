@@ -10,7 +10,13 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   plugins: [
     vue(),
-    viteSingleFile(),
+    viteSingleFile({
+      useRecommendedBuildConfig: false,
+      inlinePattern: [
+        'style.css',
+        'index.js',
+      ],
+    }),
     UnoCSS(),
     vueDevTools(),
     AutoImport({
@@ -24,11 +30,20 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
   ],
+  base: './',
   build: {
-    emptyOutDir: false,
+    chunkSizeWarningLimit: 100000000,
+    cssCodeSplit: false,
+    assetsDir: '',
     rollupOptions: {
       input: {
-        ui: resolve(__dirname, '/index.html'),
+        index: resolve(__dirname, 'index.html'),
+        code: resolve(__dirname, 'src/figma.ts'),
+      },
+      output: {
+        assetFileNames: '[name].[ext]',
+        chunkFileNames: '[name].[ext]',
+        entryFileNames: '[name].js',
       },
     },
   },

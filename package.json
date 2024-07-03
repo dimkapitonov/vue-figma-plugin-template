@@ -6,9 +6,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "dev": "vite -c vite.config.ui.ts",
-    "build": "vue-tsc -b && vite build -c vite.config.code.ts && vite build -c vite.config.ui.ts",
-    "build:watch": "vue-tsc -b && vite build -c vite.config.code.ts -w & vite build -c vite.config.ui.ts -w"
+    "typecheck": "vue-tsc --noEmit",
+    "dev": "vite",
+    "build": "vite build",
+    "build:watch": "vite build --watch"
   },
   "dependencies": {
     "@types/node": "^20.14.8",
