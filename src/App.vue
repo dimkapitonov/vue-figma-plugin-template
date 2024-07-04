@@ -3,7 +3,7 @@ useToggle(useDark())
 </script>
 
 <template>
-  <div px-2>
+  <div max-w-80 w-100 px-2>
     <h1 mb-2 text-3xl text-black dark:text-white>
       Rectangle Creator
     </h1>
