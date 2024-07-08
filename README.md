@@ -11,10 +11,14 @@ You can start developing your Figma plugin by following these steps.
 
 Clone this repository using [this template](https://github.com/dimkapitonov/vue-figma-plugin/generate).\
 Update `manifest.json` in `public` folder with your plugin's name and ID.\
-Install the necessary dependencies.
 
 ```bash
-pnpm install # If you don't have pnpm, run: npm install -g pnpm
+# Install the necessary dependencies.
+# If you don't have pnpm, run: npm install -g pnpm
+pnpm install
+
+# And then active the hooks
+npx simple-git-hooks
 ```
 
 ### 2. Plugin UI

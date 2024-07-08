@@ -5,4 +5,5 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: pnpm install && pnpm dev
+  - init: pnpm install && npx simple-git-hooks
+    command: pnpm dev
